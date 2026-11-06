@@ -18,7 +18,7 @@ const NavigationSection = () => {
     {
       name: "MBA",
       path: "/colleges/mba",
-      image: "/public/MBA logo.png",
+      image: "/MBA logo.png",
       description: "Business Schools"
     },
     {
