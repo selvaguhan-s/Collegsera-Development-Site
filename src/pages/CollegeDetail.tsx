@@ -301,8 +301,14 @@ const CollegeDetail = () => {
               </div>
             </div>
 
-            <Button onClick={() => setIsUserFormOpen(true)} className="w-full md:w-auto bg-white hover:bg-orange-50 text-slate-900 rounded-full px-8 py-6 font-bold text-base shadow-lg transition-transform hover:scale-105">
-              Apply Now <ChevronRight className="w-5 h-5 ml-2 text-orange-500" />
+            <Button
+              onClick={() => setIsUserFormOpen(true)}
+              className="group relative overflow-hidden w-full md:w-auto bg-gradient-to-r from-orange-500 via-orange-500 to-orange-600 hover:from-orange-600 hover:via-orange-600 hover:to-red-600 text-white rounded-full px-8 py-6 font-bold text-base shadow-lg shadow-orange-500/30 hover:shadow-xl hover:shadow-orange-500/50 hover:-translate-y-0.5 hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 border-0"
+            >
+              <span className="relative z-10 flex items-center">
+                Apply Now
+                <ChevronRight className="w-5 h-5 ml-1.5 text-white transition-transform duration-300 group-hover:translate-x-1.5" />
+              </span>
             </Button>
           </div>
 
@@ -355,18 +361,18 @@ const CollegeDetail = () => {
               <CardContent className="p-6 bg-white space-y-4">
                 <div className="space-y-1.5">
                   <label className="text-sm font-semibold text-slate-700">Full Name <span className="text-red-500">*</span></label>
-                  <input type="text" placeholder="Enter your full name" className="w-full border border-slate-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all" />
+                  <input type="text" placeholder="Enter your full name" className="w-full bg-white text-slate-900 placeholder:text-slate-400 border border-slate-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all" />
                 </div>
                 <div className="space-y-1.5">
                   <label className="text-sm font-semibold text-slate-700">Mobile Number <span className="text-red-500">*</span></label>
                   <div className="flex">
                     <span className="inline-flex items-center px-3 border border-r-0 border-slate-300 bg-slate-50 text-slate-500 rounded-l-lg text-sm">+91</span>
-                    <input type="tel" placeholder="9999999999" className="flex-1 w-full border border-slate-300 rounded-r-lg px-4 py-2.5 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all" />
+                    <input type="tel" placeholder="9999999999" className="flex-1 w-full bg-white text-slate-900 placeholder:text-slate-400 border border-slate-300 rounded-r-lg px-4 py-2.5 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all" />
                   </div>
                 </div>
                 <div className="space-y-1.5">
                   <label className="text-sm font-semibold text-slate-700">Email Address</label>
-                  <input type="email" placeholder="your@email.com" className="w-full border border-slate-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all" />
+                  <input type="email" placeholder="your@email.com" className="w-full bg-white text-slate-900 placeholder:text-slate-400 border border-slate-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all" />
                 </div>
                 <div className="space-y-1.5">
                   <label className="text-sm font-semibold text-slate-700">Course of Interest</label>
@@ -407,8 +413,12 @@ const CollegeDetail = () => {
         >
           <Download className="w-4 h-4 mr-2" /> Brochure
         </Button>
-        <Button className="flex-1 bg-orange-500 hover:bg-orange-600 text-white" onClick={() => setIsUserFormOpen(true)}>
+        <Button
+          className="group flex-1 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-red-600 text-white font-semibold shadow-md shadow-orange-500/25 hover:shadow-lg hover:shadow-orange-500/40 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300"
+          onClick={() => setIsUserFormOpen(true)}
+        >
           Apply Now
+          <ChevronRight className="w-4 h-4 ml-1 transition-transform duration-300 group-hover:translate-x-1" />
         </Button>
       </div>
 

@@ -221,7 +221,7 @@ const HeroSection = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white/40 text-white hover:bg-white/10 text-base md:text-lg px-8 py-3 md:px-10 md:py-4 rounded-xl shadow-xl hover:scale-[1.04] transition-all w-full sm:w-auto backdrop-blur-sm"
+                className="bg-transparent border-white/40 text-white hover:bg-white/10 hover:text-white text-base md:text-lg px-8 py-3 md:px-10 md:py-4 rounded-xl shadow-xl hover:scale-[1.04] transition-all w-full sm:w-auto backdrop-blur-sm"
               >
                 View All Exams
               </Button>

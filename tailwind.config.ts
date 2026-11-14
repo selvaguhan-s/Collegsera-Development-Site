@@ -29,9 +29,11 @@ export default {
   ],
 
   daisyui: {
+    darkTheme: "collegesera",
     themes: [
       {
         collegesera: {
+          "color-scheme": "light",
           "primary": "#1A73E8",
           "primary-focus": "#1665c7",
           "primary-content": "#ffffff",
@@ -52,7 +54,6 @@ export default {
         },
       },
       "light",
-      "dark",
     ],
   },
 } satisfies Config;

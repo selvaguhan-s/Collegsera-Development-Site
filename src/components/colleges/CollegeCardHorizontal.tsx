@@ -251,10 +251,10 @@ const CollegeCardHorizontal: React.FC<CollegeCardHorizontalProps> = ({ college }
                         <Button
                             type="button"
                             onClick={handleApplyClick}
-                            className="col-span-2 sm:col-span-1 md:col-span-auto w-full h-10 px-3 text-xs font-bold bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white shadow-md hover:shadow-lg transition-all border-0"
+                            className="group col-span-2 sm:col-span-1 md:col-span-auto w-full h-10 px-3 text-xs font-bold bg-gradient-to-r from-orange-500 via-orange-500 to-orange-600 hover:from-orange-600 hover:via-orange-600 hover:to-red-600 text-white shadow-md shadow-orange-500/20 hover:shadow-lg hover:shadow-orange-500/40 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 border-0"
                         >
                             <span>Apply Now</span>
-                            <ArrowRight className="w-3.5 h-3.5 ml-1.5 shrink-0" />
+                            <ArrowRight className="w-3.5 h-3.5 ml-1.5 shrink-0 transition-transform duration-300 group-hover:translate-x-1" />
                         </Button>
                     </div>
 

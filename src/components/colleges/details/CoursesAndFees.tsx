@@ -260,7 +260,7 @@ const CoursesAndFees: React.FC<CoursesAndFeesProps> = ({ college, onApplyClick }
                           <td className="px-4 py-3.5 text-center">
                             <Button
                               size="sm"
-                              className="h-8 px-4 text-xs bg-orange-500 hover:bg-orange-600 text-white font-semibold shadow-sm"
+                              className="group h-8 px-4 text-xs bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-red-600 text-white font-semibold shadow-sm hover:shadow-md hover:shadow-orange-500/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300"
                               onClick={onApplyClick}
                             >
                               Apply
